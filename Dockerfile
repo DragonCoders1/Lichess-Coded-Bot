@@ -18,7 +18,7 @@ RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/threeCh
 RUN wget --no-check-certificate "https://fbserv.herokuapp.com/file/books/kingOfTheHill.bin" -O kingofthehill.bin
 
 RUN bash makefish.sh
-RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/fairy_sf_14_0_1_xq/fairy-stockfish-largeboard_x86-64-bmi2" -O fsf
+RUN wget --no-check-certificate "https://github.com/ianfab/Fairy-Stockfish/releases/download/latest/fairy-stockfish-largeboard_x86-64-bmi2" -O fsf
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
